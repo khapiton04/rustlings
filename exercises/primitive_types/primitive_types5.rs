@@ -1,11 +1,15 @@
-// primitive_types5.rs
-// Destructure the `cat` tuple so that the println will work.
-// Execute `rustlings hint primitive_types5` or use the `hint` watch subcommand for a hint.
+// primitive_types6.rs
+// Use a tuple index to access the second element of `numbers`.
+// You can put the expression for the second element where ??? is so that the test passes.
+// Execute `rustlings hint primitive_types6` or use the `hint` watch subcommand for a hint.
 
 
-fn main() {
-    let cat = ("Furry McFurson", 3.5);
-    if let ("RUST_BACKTRACE = 1", 3.5) = cat{ };
+#[test]
+fn indexing_tuple() {
+    let numbers = (1, 2, 3);
+    // Replace below ??? with the tuple indexing syntax.
+    let second = (2);
 
-    println!("{} is {} years old.", "name", "age");
+    assert_eq!(2, second,
+        "This is not the 2nd number in the tuple!")
 }
