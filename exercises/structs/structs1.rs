@@ -1,18 +1,15 @@
 // structs1.rs
-//
 // Address all the TODOs to make the tests pass!
-//
-// Execute `rustlings hint structs1` or use the `hint` watch subcommand for a
-// hint.
-
+// Execute `rustlings hint structs1` or use the `hint` watch subcommand for a hint.
 
 
 struct ColorClassicStruct {
-    red: i32, green:i32, blue:i32,
-    // TODO: Something goes here
+    red: i32,
+    green: i32,
+    blue: i32
 }
 
-struct ColorTupleStruct(i32,i32,i32);
+struct ColorTupleStruct(i32, i32, i32);
 
 #[derive(Debug)]
 struct UnitLikeStruct;
@@ -24,8 +21,10 @@ mod tests {
     #[test]
     fn classic_c_structs() {
         // TODO: Instantiate a classic c struct!
-        let green = ColorClassicStruct {
-            red:0,green:255,blue:0
+        let green = ColorClassicStruct{
+            red: 0,
+            green: 255,
+            blue: 0,
         };
 
         assert_eq!(green.red, 0);
@@ -36,9 +35,7 @@ mod tests {
     #[test]
     fn tuple_structs() {
         // TODO: Instantiate a tuple struct!
-         let green = ColorTupleStruct(
-            0,255,0
-         );
+        let green = ColorTupleStruct(0, 255,0 );
 
         assert_eq!(green.0, 0);
         assert_eq!(green.1, 255);
